@@ -1,0 +1,286 @@
+$main-color: #404447;
+$sb-hover-color: #fe9230;
+$sb-link_color: #5a5b5e;
+$poppins-font-family: "Poppins", sans-serif;
+
+@mixin font-family(
+  $color: $main-color,
+  $font-size: 16px,
+  $weight: 500,
+  $font-family: $poppins-font-family
+) {
+  font-family: $font-family;
+  font-weight: $weight;
+  color: $color;
+  font-size: $font-size;
+}
+
+.sidebar {
+  grid-area: sidebar;
+
+  .navigation {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 28px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom: #e8dcdb;
+  }
+
+  .sidebar__logo {
+    margin: 0 44px 56px;
+    display: block;
+    width: 134px;
+    height: 26px;
+  }
+  .user{
+    text-decoration: none;
+  }
+
+  .dush::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 27px;
+    width: 3px;
+    background-color: $sb-hover-color;
+    display: none;
+  }
+  .admin-panel {
+    &-navigation,
+    .user-navigation {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      align-content: flex-start;
+      padding: 0;
+      list-style: none;
+      justify-content: center;
+    }
+    &-navigation {
+      margin: 0 0 470px;
+      &__item {
+        text-decoration: none;
+        margin-bottom: 18px;
+        padding-left: 44px;
+        position: relative;
+        &:hover > .dush::before {
+          display: block;
+
+        }
+        &:focus > .dush::before {
+          display: block;
+        }
+        &:active > .dush::before {
+          display: block;
+        }
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+      &__link {
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 500;
+        display: block;
+        color: $sb-link_color;
+        letter-spacing: 1px;
+        &:hover {
+          color: $sb-hover-color;
+        }
+        &:focus,
+        &:active {
+          color: $sb-hover-color;
+        }
+      }
+      &__dashboard {
+        background-image: url(../../images/icon-dashboard.svg);
+        background-position: 0 4px;
+        background-size: 17px 17px;
+        background-repeat: no-repeat;
+        padding-left: 33px;
+        &:hover,
+        &:focus,
+        &:active {
+          background-image: url(../../images/icon-dashboard__hover.svg);
+        }
+      }
+      &__task {
+        background-image: url(../../images/icon-task.svg);
+        background-position: 0 4px;
+        background-size: 17px 17px;
+        background-repeat: no-repeat;
+        padding-left: 33px;
+        &:hover,
+        &:focus,
+        &:active {
+          background-image: url(../../images/icon-task__hover.svg);
+        }
+      }
+      &__project {
+        background-image: url(../../images/icon-project.svg);
+        background-position: 0 4px;
+        background-size: 17px 17px;
+        background-repeat: no-repeat;
+        padding-left: 33px;
+        &:hover,
+        &:focus,
+        &:active {
+          background-image: url(../../images/icon-project__hover.svg);
+        }
+      }
+      &__wallet {
+        background-image: url(../../images/icon-wallet.svg);
+        background-position: 0 4px;
+        background-size: 17px 17px;
+        background-repeat: no-repeat;
+        padding-left: 33px;
+        &:hover,
+        &:focus,
+        &:active {
+          background-image: url(../../images/icon-wallet__hover.svg);
+        }
+      }
+      &__data {
+        background-image: url(../../images/icon-data.svg);
+        background-position: 0 4px;
+        background-size: 17px 17px;
+        background-repeat: no-repeat;
+        padding-left: 33px;
+        &:hover,
+        &:focus,
+        &:active {
+          background-image: url(../../images/icon-data__hover.svg);
+        }
+      }
+      &__invoice {
+        background-image: url(../../images/icon-invoice.svg);
+        background-position: 0 4px;
+        background-size: 17px 17px;
+        background-repeat: no-repeat;
+        padding-left: 33px;
+        &:hover,
+        &:focus,
+        &:active {
+          background-image: url(../../images/icon-invoice__hover.svg);
+        }
+      }
+      &__helps {
+        background-image: url(../../images/icon-helps.svg);
+        background-position: 0 4px;
+        background-size: 9px 17px;
+        background-repeat: no-repeat;
+        padding-left: 33px;
+        &:hover,
+        &:focus,
+        &:active {
+          background-image: url(../../images/icon-helps__hover.svg);
+        }
+      }
+    }
+  }
+  .user-navigation {
+    margin: 0 0 40px 44px;
+    text-decoration: none;
+    &__logout {
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      display: block;
+      color: $sb-link_color;
+      letter-spacing: 1px;
+
+      &-icon {
+        background-image: url(../../images/icon-logout.svg);
+        background-position: 0 4px;
+        background-size: 17px 17px;
+        background-repeat: no-repeat;
+        padding-left: 34px;
+      }
+    }
+  }
+}
+
+@media (min-device-width: 768px) and (max-device-width: 1199px) {
+  .sidebar {
+    display: none;
+  }
+  .container {
+    width: 768px;
+    margin: 0 auto;
+    grid-template:
+      "header"
+      "main"
+      "main";
+    grid-template-columns: 768px;
+    grid-template-rows: 73px auto;
+  }
+  .main {
+    min-width: 768px;
+    padding: 18px 30px 0 30px;
+    margin: 0 auto;
+    grid-template:
+      " . credit-card earning"
+      " . credit-card earning"
+      ". statistics statistics"
+      ". statistics statistics"
+      ". montly-sale calender"
+      ". yealy-saled calender";
+    grid-template-columns: 1fr repeat(2, 284px) 1fr;
+    grid-template-rows: repeat(6, 180px);
+    grid-gap: 18px;
+  }
+}
+
+@media (min-device-width: 480px) and (max-device-width: 767px) {
+  .sidebar {
+    display: none;
+  }
+  .container {
+    width: 480px;
+    max-width: 100%;
+    grid-template:
+      "header"
+      "main"
+      "main";
+    grid-template-columns: 100%;
+    grid-template-rows: 73px 828px;
+  }
+  .main {
+    width: 480px;
+    text-align: center;
+    max-width: 100%;
+    padding: 18px 30px 0 30px;
+    margin: 0 auto;
+    grid-template:
+      " . credit-card "
+      ". earning"
+      ". statistics "
+      ". statistics"
+      ". montly-sale "
+      ". yealy-saled"
+      ". calender";
+    grid-template-columns: 1fr 80% 1fr;
+    grid-template-rows: repeat(8, auto);
+    grid-gap: 18px;
+  }
+  .yealy-sale__wrapper,
+  .montly-sale__wrapper {
+    margin-bottom: 50px;
+  }
+  .calender {
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  #ChartPoint {
+    width: 300px !important;
+  }
+  #pbt2,
+  #pbt1 {
+    text-align: left;
+  }
+}
