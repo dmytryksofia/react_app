@@ -16,7 +16,7 @@ export const Sidebar = () => (
       </button>
       <ul className="admin-panel-navigation">
      
-       <a href='/dashboard' className="admin-panel-navigation__item" > 
+       <a href='#/dashboard' className="admin-panel-navigation__item" > 
        
           <button className="admin-panel-navigation__link admin-panel-navigation__dashboard dush">
             Dashboard
@@ -24,42 +24,42 @@ export const Sidebar = () => (
           
           </a>
         
-        <a href='/mytask' className="admin-panel-navigation__item" > 
+        <a href='#/mytask' className="admin-panel-navigation__item" > 
         
           <button className="admin-panel-navigation__link admin-panel-navigation__task  dush">
             My Task
           </button>
         </a>
 
-        <a href='/myproject' className="admin-panel-navigation__item" > 
+        <a href='#/myproject' className="admin-panel-navigation__item" > 
         
           <button className="admin-panel-navigation__link admin-panel-navigation__project  dush">
             My Project
           </button>
         </a>
-        <a href='/mywallet' className="admin-panel-navigation__item">
+        <a href='#/mywallet' className="admin-panel-navigation__item">
           <button className="admin-panel-navigation__link admin-panel-navigation__wallet  dush">
             My Wallet
           </button>
         </a>
-        <a href='/historydata' className="admin-panel-navigation__item">
+        <a href='#/historydata' className="admin-panel-navigation__item">
           <button className="admin-panel-navigation__link admin-panel-navigation__data  dush">
             History Data
           </button>
         </a>
-        <a href='/invoice' className="admin-panel-navigation__item">
+        <a href='#/invoice' className="admin-panel-navigation__item">
           <button className="admin-panel-navigation__link admin-panel-navigation__invoice  dush">
             Invoice
           </button>
         </a>
-        <a href='/helps' className="admin-panel-navigation__item ">
+        <a href='#/helps' className="admin-panel-navigation__item ">
           <button className="admin-panel-navigation__link admin-panel-navigation__helps  dush">
             Helps
           </button>
         </a>
       </ul>
       <div className="user-navigation">
-        <a href='/logout' className="user">
+        <a href='#/logout' className="user">
         <button className="user-navigation__logout user-navigation__logout-icon">
           Logout
         </button>

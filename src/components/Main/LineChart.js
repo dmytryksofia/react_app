@@ -27,7 +27,7 @@ const LineChart = () => {
         pointHoverBorderWidth: 3,
         pointBackgroundColor: "rgba(255, 255, 255, 0)",
         pointHoverBackgroundColor: "rgba(255, 255, 255, 1)",
-        borderWidth: 3,
+        borderWidth: 2,
         borderColor: "#FF7258",
     }]
   }}

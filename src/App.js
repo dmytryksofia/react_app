@@ -1,7 +1,7 @@
 import React from "react";
 import { Header, Sidebar, Main } from './components';
 import  NewPage  from './components/NewPage.js';
-import { BrowserRouter as Router, Switch, Route, Redirect  } from "react-router-dom";
+import { HashRouter as Router, Switch, Route, } from 'react-router-dom';
 import './index.scss';
 
 const MainContainer = () => (
@@ -25,10 +25,10 @@ const NewContainer = () => (
 );
 export const App = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
       <Route exact path="/">
-          <Redirect to='/dashboard' />
+      <MainContainer/>
         </Route>
       
       <Route path="/dashboard">

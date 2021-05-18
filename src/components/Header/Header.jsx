@@ -3,7 +3,7 @@ import img1 from '../../images/icon-search.svg';
 import img2 from '../../images/icon-notification.svg';
 import img3 from '../../images/icon-message.svg';
 import img4 from '../../images/nick-ramil@1X.png';
-import Trump from '../../images/DonaldTrump.svg';
+
 
 import './Header.scss';
 
