@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/react_app/static/css/main.930dddbe.chunk.css",
+    "main.js": "/react_app/static/js/main.c0c230a3.chunk.js",
+    "main.js.map": "/react_app/static/js/main.c0c230a3.chunk.js.map",
+    "runtime-main.js": "/react_app/static/js/runtime-main.bb2ec9df.js",
+    "runtime-main.js.map": "/react_app/static/js/runtime-main.bb2ec9df.js.map",
+    "static/js/2.841975b0.chunk.js": "/react_app/static/js/2.841975b0.chunk.js",
+    "static/js/2.841975b0.chunk.js.map": "/react_app/static/js/2.841975b0.chunk.js.map",
+    "index.html": "/react_app/index.html",
+    "static/css/main.930dddbe.chunk.css.map": "/react_app/static/css/main.930dddbe.chunk.css.map",
+    "static/js/2.841975b0.chunk.js.LICENSE.txt": "/react_app/static/js/2.841975b0.chunk.js.LICENSE.txt",
+    "static/media/Circle.ddd76519.svg": "/react_app/static/media/Circle.ddd76519.svg",
+    "static/media/index.scss": "/react_app/static/media/full-bg@1X.ba89f26c.png",
+    "static/media/Main.scss": "/react_app/static/media/icon-arrow-down.f62412d0.svg",
+    "static/media/Sidebar.scss": "/react_app/static/media/icon-wallet__hover.8d5534e1.svg",
+    "static/media/icon-message.aee88256.svg": "/react_app/static/media/icon-message.aee88256.svg",
+    "static/media/icon-notification.eb23c186.svg": "/react_app/static/media/icon-notification.eb23c186.svg",
+    "static/media/icon-search.57efff71.svg": "/react_app/static/media/icon-search.57efff71.svg",
+    "static/media/nick-ramil@1X.b54118c8.png": "/react_app/static/media/nick-ramil@1X.b54118c8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bb2ec9df.js",
+    "static/js/2.841975b0.chunk.js",
+    "static/css/main.930dddbe.chunk.css",
+    "static/js/main.c0c230a3.chunk.js"
+  ]
+}
