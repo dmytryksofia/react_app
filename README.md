@@ -1,6 +1,6 @@
 #  Dmytryk Sofia AM-33 :
 
- - [DeMo](https://dmytryksofia.github.io/react_app/#/).
+ Cgj
 
 ### Dependencies
 * Node v12.16.3 and higher
